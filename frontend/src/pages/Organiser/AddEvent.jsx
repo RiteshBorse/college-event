@@ -49,14 +49,14 @@ const AddEvent = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 to-black">
       <div className="container mx-auto px-6 py-8">
         <div className="max-w-4xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
               Create Your
-              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"> Event</span>
+              <span className="bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"> Event</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Fill in the details below to create an unforgettable campus experience
@@ -73,7 +73,7 @@ const AddEvent = () => {
                 
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-8">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-xl">
+                    <div className="w-12 h-12 bg-linear-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-xl">
                       🎯
                     </div>
                     <div>
@@ -157,7 +157,7 @@ const AddEvent = () => {
                       <button
                         type="submit"
                         disabled={loading}
-                        className="group relative flex-1 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none shadow-lg shadow-blue-500/25"
+                        className="group relative flex-1 px-8 py-4 bg-linear-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none shadow-lg shadow-blue-500/25"
                       >
                         <span className="relative z-10 flex items-center justify-center">
                           {loading ? (
@@ -172,7 +172,7 @@ const AddEvent = () => {
                             </>
                           )}
                         </span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl blur-md opacity-0 group-hover:opacity-50 transition-opacity"></div>
+                        <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-700 rounded-2xl blur-md opacity-0 group-hover:opacity-50 transition-opacity"></div>
                       </button>
                       
                       <button
@@ -198,7 +198,7 @@ const AddEvent = () => {
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-green-500 rounded-full blur-3xl opacity-10"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center text-xl">
+                    <div className="w-12 h-12 bg-linear-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center text-xl">
                       💡
                     </div>
                     <div>
@@ -231,7 +231,7 @@ const AddEvent = () => {
                       }
                     ].map((tip, index) => (
                       <div key={index} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-700/30 hover:bg-gray-700/50 transition-all duration-300">
-                        <div className="text-2xl flex-shrink-0">{tip.icon}</div>
+                        <div className="text-2xl shrink-0">{tip.icon}</div>
                         <div>
                           <h4 className="font-semibold text-white mb-1">{tip.title}</h4>
                           <p className="text-gray-400 text-sm">{tip.description}</p>
@@ -247,7 +247,7 @@ const AddEvent = () => {
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-500 rounded-full blur-3xl opacity-10"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center text-xl">
+                    <div className="w-12 h-12 bg-linear-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center text-xl">
                       👁️
                     </div>
                     <div>

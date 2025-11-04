@@ -38,20 +38,20 @@ const MyEvents = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
+      <div className="min-h-screen bg-linear-to-br from-gray-900 to-black flex items-center justify-center">
         <LoadingSpinner />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 to-black">
       <div className="container mx-auto px-6 py-8">
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
             My Event
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"> Journey</span>
+            <span className="bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"> Journey</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Track your participation, relive memories, and stay updated on upcoming events
@@ -72,11 +72,11 @@ const MyEvents = () => {
               </p>
               <a
                 href="/participant/events"
-                className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/25"
+                className="group relative inline-flex items-center px-8 py-4 bg-linear-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/25"
               >
                 <span>Discover Events</span>
                 <span className="ml-3 transform group-hover:translate-x-1 transition-transform">→</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl blur-md opacity-0 group-hover:opacity-50 transition-opacity"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-700 rounded-2xl blur-md opacity-0 group-hover:opacity-50 transition-opacity"></div>
               </a>
             </div>
           </div>
@@ -114,7 +114,7 @@ const MyEvents = () => {
                   key={index}
                   className="group relative bg-gray-800/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-700 hover:border-transparent transition-all duration-500 hover:scale-105"
                 >
-                  <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgColor} rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity`}></div>
+                  <div className={`absolute inset-0 bg-linear-to-br ${stat.bgColor} rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity`}></div>
                   <div className="relative z-10 text-center">
                     <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
                       {stat.icon}
@@ -122,7 +122,7 @@ const MyEvents = () => {
                     <div className="text-4xl font-bold text-white mb-2">
                       {stat.count}
                     </div>
-                    <div className={`text-lg font-semibold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-1`}>
+                    <div className={`text-lg font-semibold bg-linear-to-r ${stat.color} bg-clip-text text-transparent mb-1`}>
                       {stat.label}
                     </div>
                     <div className="text-gray-400 text-sm">
@@ -139,7 +139,7 @@ const MyEvents = () => {
                 <div className="flex items-center justify-between mb-8">
                   <div>
                     <h2 className="text-4xl font-bold text-white mb-2">
-                      Upcoming & <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Active</span>
+                      Upcoming & <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Active</span>
                     </h2>
                     <p className="text-gray-400 text-lg">Events you're registered to attend</p>
                   </div>
@@ -167,7 +167,7 @@ const MyEvents = () => {
                 <div className="flex items-center justify-between mb-8">
                   <div>
                     <h2 className="text-4xl font-bold text-white mb-2">
-                      Event <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Memories</span>
+                      Event <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Memories</span>
                     </h2>
                     <p className="text-gray-400 text-lg">Events you've successfully completed</p>
                   </div>
@@ -198,7 +198,7 @@ const MyEvents = () => {
           
           <div className="relative z-10">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center text-xl">
+              <div className="w-12 h-12 bg-linear-to-r from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center text-xl">
                 👋
               </div>
               <div>
@@ -235,7 +235,7 @@ const MyEvents = () => {
                   <div className="text-3xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
                     {tip.icon}
                   </div>
-                  <h4 className={`text-lg font-semibold bg-gradient-to-r ${tip.color} bg-clip-text text-transparent mb-2`}>
+                  <h4 className={`text-lg font-semibold bg-linear-to-r ${tip.color} bg-clip-text text-transparent mb-2`}>
                     {tip.title}
                   </h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
@@ -250,7 +250,7 @@ const MyEvents = () => {
         {/* Bottom CTA */}
         {events.length > 0 && (
           <div className="text-center mt-12">
-            <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-semibold">
+            <div className="inline-flex items-center space-x-2 px-6 py-3 bg-linear-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-semibold">
               <span>✨</span>
               <span>Keep exploring new events to expand your campus experience!</span>
             </div>

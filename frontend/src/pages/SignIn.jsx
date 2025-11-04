@@ -69,7 +69,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 to-black flex items-center justify-center px-4 py-12">
       <div className="max-w-6xl w-full grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Side - Image & Content */}
         <div className="relative">
@@ -79,15 +79,15 @@ const SignIn = () => {
               alt="Campus students collaborating"
               className="w-full h-[600px] object-cover transform hover:scale-105 transition duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"></div>
             
             {/* Overlay Content */}
             <div className="absolute bottom-8 left-8 right-8 text-white">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+              <div className="bg-linear-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
                 🎓 Join Our Community
               </div>
               <h2 className="text-4xl font-bold mb-4">
-                Connect. Create. <span className="text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">Celebrate.</span>
+                Connect. Create. <span className="text-transparent bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text">Celebrate.</span>
               </h2>
               <p className="text-gray-200 text-lg leading-relaxed">
                 Be part of an exciting campus community where students organize, participate, and create unforgettable memories through amazing events and activities.
@@ -125,7 +125,7 @@ const SignIn = () => {
             <div className="relative z-10">
               <div className="text-center mb-8">
                 <div className="flex justify-center mb-4">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${
+                  <div className={`w-16 h-16 rounded-2xl bg-linear-to-r ${
                     isLogin ? 'from-blue-500 to-cyan-600' : 'from-purple-500 to-pink-600'
                   } flex items-center justify-center shadow-lg`}>
                     <span className="text-2xl">
@@ -209,7 +209,7 @@ const SignIn = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="group relative w-full px-6 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none shadow-lg shadow-blue-500/25"
+                  className="group relative w-full px-6 py-4 bg-linear-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none shadow-lg shadow-blue-500/25"
                 >
                   <span className="relative z-10 flex items-center justify-center">
                     {loading ? (
@@ -224,7 +224,7 @@ const SignIn = () => {
                       </>
                     )}
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl blur-md opacity-0 group-hover:opacity-50 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-700 rounded-2xl blur-md opacity-0 group-hover:opacity-50 transition-opacity"></div>
                 </button>
               </form>
 
